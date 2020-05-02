@@ -39,7 +39,9 @@ def scrape_mars_news():
         soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve the latest element that contains news title and news_paragraph
-    
+        news_title = soup.find('div', class_='content_title').text
+        news_p = soup.find('div', class_='article_teaser_body').text
+
 
         # Dictionary entry from MARS NEWS
         mars_info['news_title'] = news_title
@@ -71,13 +73,13 @@ def scrape_mars_image():
         soup= BeautifulSoup(browser.html,"html.parser")
         image=soup.find("img",class_="fancybox-image").get("src")
     # print(image)
-        browser.url
-        featured_image_url=browser.url+image
+        # browser.url
+        # featured_image_url=browser.url+image
         
 
     # Dictionary entry from FEATURED IMAGE
-        mars_info['featured_image_url'] = featured_image_url 
-        
+        # mars_info['featured_image_url'] = featured_image_url 
+        mars_info['featured_image_url']=image
         return mars_info
     finally:
 
