@@ -30,7 +30,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -44,7 +44,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -53,7 +53,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -64,7 +64,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -78,18 +78,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Mars Now\n",
-      "A pair of zoomable cameras will help scientists and rover drivers with high-resolution color images.\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "# print(soup.prettify())\n",
     "# HTML Object\n",
@@ -115,17 +106,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "/c/Windows/system32/chromedriver\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "# JPL Mars Space Images - Featured Image\n",
     "# Visit the url for JPL Featured Space Image here.\n",
@@ -140,7 +123,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -150,7 +133,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -160,7 +143,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -169,18 +152,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "C:\\Users\\priya\\Anaconda3\\lib\\site-packages\\splinter\\driver\\webdriver\\__init__.py:528: FutureWarning: browser.find_link_by_partial_text is deprecated. Use browser.links.find_by_partial_text instead.\n",
-      "  FutureWarning,\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "# Sleep script to ensure the page fully loads\n",
     "sleep(7)\n",
@@ -191,17 +165,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "/spaceimages/images/mediumsize/PIA17449_ip.jpg\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "html_image=browser.html\n",
     "soup= BeautifulSoup(browser.html,\"html.parser\")\n",
@@ -211,17 +177,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars/spaceimages/images/mediumsize/PIA17449_ip.jpg\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "browser.url\n",
     "featured_image_url=browser.url+image\n",
@@ -231,7 +189,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -242,29 +200,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
     "# https://splinter.readthedocs.io/en/latest/drivers/chrome.html\n",
-    "# !which chromedriver\n",
-    "# executable_path = {'executable_path': 'chromedriver.exe'}\n",
-    "# browser = Browser('chrome', **executable_path, headless=False)"
+    "!which chromedriver\n",
+    "executable_path = {'executable_path': 'chromedriver.exe'}\n",
+    "browser = Browser('chrome', **executable_path, headless=False)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 17,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "/c/Windows/system32/chromedriver\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "# Mars Weather\n",
     "# Visit the Mars Weather twitter account here and scrape the latest Mars weather tweet from the page. \n",
@@ -280,19 +230,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "InSight sol 507 (2020-04-30) low -92.1ºC (-133.7ºF) high -2.4ºC (27.7ºF)\n",
-      "winds from the SW at 5.0 m/s (11.1 mph) gusting to 18.2 m/s (40.6 mph)\n",
-      "pressure at 6.80 hPa\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "tweet=browser.html\n",
     "soup= BeautifulSoup(browser.html,\"html.parser\")\n",
@@ -303,80 +243,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "InSight sol 507 (2020-04-30) low -92.1ºC (-133.7ºF) high -2.4ºC (27.7ºF)\n",
-      "winds from the SW at 5.0 m/s (11.1 mph) gusting to 18.2 m/s (40.6 mph)\n",
-      "pressure at 6.80 hPa\n"
-     ]
-    }
-   ],
-   "source": [
-    "# Mars Facts\n",
-    "tweet=browser.html\n",
-    "soup= BeautifulSoup(browser.html,\"html.parser\")\n",
-    "pattern = re.compile(r'sol')\n",
-    "mars_weather = soup.find('span', text=pattern).text\n",
-    "print(mars_weather)\n",
-    "# url='https://space-facts.com/mars/'"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
-    "url='https://space-facts.com/mars/'\n"
+    "# Mars Facts\n",
+    "\n",
+    "url='https://space-facts.com/mars/'"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "[                      0                              1\n",
-       " 0  Equatorial Diameter:                       6,792 km\n",
-       " 1       Polar Diameter:                       6,752 km\n",
-       " 2                 Mass:  6.39 × 10^23 kg (0.11 Earths)\n",
-       " 3                Moons:            2 (Phobos & Deimos)\n",
-       " 4       Orbit Distance:       227,943,824 km (1.38 AU)\n",
-       " 5         Orbit Period:           687 days (1.9 years)\n",
-       " 6  Surface Temperature:                   -87 to -5 °C\n",
-       " 7         First Record:              2nd millennium BC\n",
-       " 8          Recorded By:           Egyptian astronomers,\n",
-       "   Mars - Earth Comparison             Mars            Earth\n",
-       " 0               Diameter:         6,779 km        12,742 km\n",
-       " 1                   Mass:  6.39 × 10^23 kg  5.97 × 10^24 kg\n",
-       " 2                  Moons:                2                1\n",
-       " 3      Distance from Sun:   227,943,824 km   149,598,262 km\n",
-       " 4         Length of Year:   687 Earth days      365.24 days\n",
-       " 5            Temperature:    -153 to 20 °C      -88 to 58°C,\n",
-       "                       0                              1\n",
-       " 0  Equatorial Diameter:                       6,792 km\n",
-       " 1       Polar Diameter:                       6,752 km\n",
-       " 2                 Mass:  6.39 × 10^23 kg (0.11 Earths)\n",
-       " 3                Moons:            2 (Phobos & Deimos)\n",
-       " 4       Orbit Distance:       227,943,824 km (1.38 AU)\n",
-       " 5         Orbit Period:           687 days (1.9 years)\n",
-       " 6  Surface Temperature:                   -87 to -5 °C\n",
-       " 7         First Record:              2nd millennium BC\n",
-       " 8          Recorded By:           Egyptian astronomers]"
-      ]
-     },
-     "execution_count": 21,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "tables=pd.read_html(url)\n",
     "tables"
@@ -384,97 +264,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "list"
-      ]
-     },
-     "execution_count": 22,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "type(tables)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<style scoped>\n",
-       "    .dataframe tbody tr th:only-of-type {\n",
-       "        vertical-align: middle;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe tbody tr th {\n",
-       "        vertical-align: top;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe thead th {\n",
-       "        text-align: right;\n",
-       "    }\n",
-       "</style>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>Values</th>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>Description</th>\n",
-       "      <th></th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>Equatorial Diameter:</th>\n",
-       "      <td>6,792 km</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>Polar Diameter:</th>\n",
-       "      <td>6,752 km</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>Mass:</th>\n",
-       "      <td>6.39 × 10^23 kg (0.11 Earths)</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>Moons:</th>\n",
-       "      <td>2 (Phobos &amp; Deimos)</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>Orbit Distance:</th>\n",
-       "      <td>227,943,824 km (1.38 AU)</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "                                             Values\n",
-       "Description                                        \n",
-       "Equatorial Diameter:                       6,792 km\n",
-       "Polar Diameter:                            6,752 km\n",
-       "Mass:                 6.39 × 10^23 kg (0.11 Earths)\n",
-       "Moons:                          2 (Phobos & Deimos)\n",
-       "Orbit Distance:            227,943,824 km (1.38 AU)"
-      ]
-     },
-     "execution_count": 23,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "df = tables[0]\n",
     "df.columns = ['Description','Values']\n",
@@ -485,20 +286,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "'<table border=\"1\" class=\"dataframe\">\\n  <thead>\\n    <tr style=\"text-align: right;\">\\n      <th></th>\\n      <th>Values</th>\\n    </tr>\\n    <tr>\\n      <th>Description</th>\\n      <th></th>\\n    </tr>\\n  </thead>\\n  <tbody>\\n    <tr>\\n      <th>Equatorial Diameter:</th>\\n      <td>6,792 km</td>\\n    </tr>\\n    <tr>\\n      <th>Polar Diameter:</th>\\n      <td>6,752 km</td>\\n    </tr>\\n    <tr>\\n      <th>Mass:</th>\\n      <td>6.39 × 10^23 kg (0.11 Earths)</td>\\n    </tr>\\n    <tr>\\n      <th>Moons:</th>\\n      <td>2 (Phobos &amp; Deimos)</td>\\n    </tr>\\n    <tr>\\n      <th>Orbit Distance:</th>\\n      <td>227,943,824 km (1.38 AU)</td>\\n    </tr>\\n    <tr>\\n      <th>Orbit Period:</th>\\n      <td>687 days (1.9 years)</td>\\n    </tr>\\n    <tr>\\n      <th>Surface Temperature:</th>\\n      <td>-87 to -5 °C</td>\\n    </tr>\\n    <tr>\\n      <th>First Record:</th>\\n      <td>2nd millennium BC</td>\\n    </tr>\\n    <tr>\\n      <th>Recorded By:</th>\\n      <td>Egyptian astronomers</td>\\n    </tr>\\n  </tbody>\\n</table>'"
-      ]
-     },
-     "execution_count": 24,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "mars_facts = df.to_html()\n",
     "mars_facts"
@@ -506,7 +296,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [
     {
@@ -522,7 +312,7 @@
        "  'img_url': 'http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg'}]"
       ]
      },
-     "execution_count": 25,
+     "execution_count": 4,
      "metadata": {},
      "output_type": "execute_result"
     }
